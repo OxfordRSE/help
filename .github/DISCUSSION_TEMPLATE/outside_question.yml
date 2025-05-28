@@ -1,5 +1,3 @@
-name: "Q&A: Ask the RSE Team"
-description: Start a discussion with the Oxford University Research Software Engineering team.
 labels: [question, rse-support]
 body:
   - type: dropdown
