@@ -1,0 +1,29 @@
+name: "Q&A: Ask the RSE Team"
+description: Start a discussion with the Oxford University Research Software Engineering team.
+labels: [question, rse-support]
+body:
+  - type: dropdown
+    id: division
+    attributes:
+      label: Which division are you in?
+      description: Select your division within the University of Oxford.
+      options:
+        - Humanities
+        - Mathematical, Physical and Life Sciences (MPLS)
+        - Medical Sciences
+        - Social Sciences
+        - Department for Continuing Education
+        - Gardens, Libraries and Museums (GLAM)
+        - None / Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to ask about?
+      description: Provide details about your question or issue.
+      placeholder: >
+        For example: "I'm looking for guidance on setting up a CI/CD pipeline for our research project. What tools and practices are recommended?"
+    validations:
+      required: true
